@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  background-color: #0d0d0d; /* Тёмный фон */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === DISLCAIMER / ОВЕРЛЕЙ === */
+#disclaimer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+}
+
+.disclaimer-box {
+  background: #1e1e1e;
+  color: #fff;
+  width: 80%;
+  min-height: 200px;
+  max-width: 850px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.disclaimer-box h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #ff4d4d;
+}
+
+.disclaimer-box p {
+  font-size: 22px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+#close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#close-btn:hover {
+  transform: scale(1.2);
+  color: #ff4d4d;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+}
+
+.gif-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.side-gif {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.side-gif:hover {
+  transform: scale(1.08);
+}
+
+.text-center {
+  text-align: center;
+  background: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  padding: 30px 60px;
+  width: 650px;
+  transition: transform 0.3s ease;
+}
+
+.text-center:hover {
+  transform: scale(1.03);
+}
+
+.text-center h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.text-center p {
+  font-size: 22px;
+  color: #ccc;
+  line-height: 1.6;
+}

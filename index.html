@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Витаю</title>
+  <link rel="stylesheet" href="css.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- 🟧 ИСКЛЮЧЕНИЕ / ДИСКЛЕЙМЕР -->
+<div id="disclaimer-overlay">
+  <div class="disclaimer-box">
+    <span id="close-btn">&times;</span>
+    <h2>ДИСКЛЕЙМЕР</h2>
+    <p>ЭТОТ САЙТ ЯВЛЯЕТСЯ ЧАСТЬЮ ПОДАРКА, В СВЯЗИ С ТЕМ, ЧТО У МЕНЯ НЕ СЛИШКОМ ХОРОШАЯ ФАНТАЗИЯ, И Я НЕ БЫЛ УВЕРЕН, ЧТО ТЕБЕ ДАРИТЬ.
+      
+    </p>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="wrapper">
+
+    <!-- Верхний ряд -->
+    <div class="gif-row top-row">
+      <img src="/5EeH.gif" alt="Гиф 1" class="side-gif" />
+      <img src="/6k7.gif" alt="Гиф 2" class="side-gif" />
+      <img src="/VZvx.gif" alt="Гиф 3" class="side-gif" />
+    </div>
+
+    <!-- Центральный текстовый блок -->
+    <div class="text-center">
+      <h1>ПОЖЕЛАНИЕ</h1>
+      <p>Денис, за эти два месяца я, может, и не успел узнать тебя до конца, поетому не могу быть уверенным, что тебе желать, но в жизни, как по мне, главное - это удача и здоровье. Так что желаю тебе побольше и того, и другого.
+        И, самое важное, желаю чтобы теодолит твой всегда стоял по уровню, а дома была отдельная комната для денег, которые ты будешь получать, работая геодезистом.
+    </div>
+
+    <!-- Нижний ряд -->
+    <div class="gif-row bottom-row">
+      <img src="/ZLnU.gif" alt="Гиф 4" class="side-gif" />
+      <img src="/vide-unscreen.gif" alt="Гиф 5" class="side-gif" />
+      <img src="/xt.gif" alt="Гиф 6" class="side-gif" />
+    </div>
+
+  </div>
+  <script>
+    const closeBtn = document.getElementById('close-btn');
+    const overlay = document.getElementById('disclaimer-overlay');
+
+    closeBtn.addEventListener('click', () => {
+      overlay.style.opacity = '0';
+      overlay.style.pointerEvents = 'none';
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 400);
+    });
+  </script>
+</body>
+</html>
